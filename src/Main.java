@@ -8,7 +8,7 @@ public class Main {
         Recipe recipe = new Recipe();
 
         System.out.println("Welcome to the Recipe Generator!");
-        System.out.println("Enter recipe name you want:");
+        System.out.println("Enter recipe name you want.");
         System.out.println("Examples: Pasta, Salad, Cake");
         System.out.println();
 
