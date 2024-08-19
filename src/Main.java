@@ -5,7 +5,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Recipe recipe = new Recipe();
+        Recipe recipe = new Recipe() {
+            @Override
+            public void setRecipeDescription(String description) {
+
+            }
+        };
 
         System.out.println("Welcome to the Recipe Generator!");
         System.out.println("Enter recipe name you want.");

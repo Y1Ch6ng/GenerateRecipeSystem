@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Recipe {
+public abstract class Recipe implements RecipeCreator,RecipeOperations,Comparable<Recipe>{
     private String name;
     private String description;
     private ArrayList<Ingredient> ingredients;
@@ -23,6 +23,10 @@ public class Recipe {
 
     public ArrayList<Ingredient> getIngredients() {
         return ingredients;
+    }
+
+    public int compareTo(Recipe other) {
+        return this.name.compareTo(other.name);
     }
 
     public void addIngredient(Ingredient ingredient) {

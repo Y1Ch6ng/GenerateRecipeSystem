@@ -1,4 +1,4 @@
-public class Ingredient {
+public class Ingredient{
     private String name;
     private double quantity;
     private String unit;
